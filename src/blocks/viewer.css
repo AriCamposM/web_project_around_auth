@@ -1,0 +1,59 @@
+.viewer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.viewer_opened {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.viewer__container {
+  position: relative;
+}
+
+.viewer__close {
+  position: absolute;
+  top: -35px;
+  right: -35px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.viewer__close:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.viewer__image {
+  max-width: 75vw;
+  max-height: 75vh;
+  position: relative;
+}
+
+.viewer__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  .viewer__close {
+    width: 30px;
+    height: 30px;
+  }
+}

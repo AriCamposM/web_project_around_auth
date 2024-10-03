@@ -1,0 +1,238 @@
+.post {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.post_opened {
+  display: flex;
+}
+
+.post__form {
+  width: 430px;
+  height: 330px;
+
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  border-radius: 10px;
+}
+
+.post__close-button {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.post__close-button:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.post__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  width: 100%;
+  text-align: left;
+  margin-left: 80px;
+  margin-bottom: 54px;
+  padding-top: 30px;
+}
+
+.post__input-link {
+  width: 358px;
+  height: 27px;
+  margin: 10px auto;
+  display: block;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c4c4c4;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.post__input-link::placeholder {
+  color: #c4c4c4;
+}
+
+.post__input-title {
+  width: 358px;
+  height: 27px;
+  margin: 10px auto;
+  display: block;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c4c4c4;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.post__input-title::placeholder {
+  color: #c4c4c4;
+}
+
+.post__button {
+  width: 358px;
+  height: 50px;
+  margin: 20px auto;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 48px;
+  margin-bottom: 44px;
+}
+
+.post__button:hover {
+  opacity: 50%;
+}
+
+.post__button:disabled {
+  background-color: #fff;
+  color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+}
+
+.post__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Post Validacion */
+
+/*Clase Boton Desactivado*/
+.post__button_disabled {
+  background-color: #fff;
+  color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+}
+
+.post__input_type_error {
+  border-bottom: 1px solid #e10e0e;
+}
+
+.post__error_visible {
+  display: flex;
+}
+
+.input-title-error {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  max-width: 358px;
+  text-align: left;
+  width: 100%;
+}
+.input-link-error {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  max-width: 358px;
+  text-align: left;
+  width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .post__form {
+    width: 282px;
+    height: 322px;
+  }
+
+  .post__close-button {
+    position: absolute;
+    top: -60px;
+    right: 15px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .post__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 50px;
+    padding-top: 0px;
+  }
+
+  .post__input-link {
+    width: 238px;
+    height: 26px;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  .post__input-title {
+    width: 238px;
+    height: 26px;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .post__button {
+    width: 238px;
+    height: 46px;
+    margin: 20px auto;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 46px;
+    margin-bottom: 25px;
+  }
+
+  .input-title-error {
+    max-width: 238px;
+  }
+  .input-link-error {
+    max-width: 238px;
+  }
+}

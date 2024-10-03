@@ -1,0 +1,233 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.popup_opened {
+  display: flex;
+}
+
+.popup__form {
+  width: 430px;
+
+  max-height: 408px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  border-radius: 10px;
+}
+
+.popup__close-button {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.popup__close-button:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.popup__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  width: 100%;
+  text-align: left;
+  margin-left: 80px;
+  margin-bottom: 54px;
+}
+
+.popup__input-about {
+  width: 358px;
+  height: 27px;
+  margin: 10px auto;
+  display: block;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c4c4c4;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.popup__input-name {
+  width: 358px;
+  height: 27px;
+  margin: 10px auto;
+  display: block;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c4c4c4;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.popup__button {
+  width: 358px;
+  height: 50px;
+  margin: 20px auto;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 48px;
+  margin-bottom: 44px;
+}
+
+.popup__button:hover {
+  opacity: 50%;
+}
+
+.popup__button:disabled {
+  background-color: #fff;
+  color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+}
+
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Clase Boton Desactivado*/
+.popup__button_disabled {
+  background-color: #fff;
+  color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+}
+
+.popup__input_type_error {
+  border-bottom: 1px solid #e10e0e;
+}
+
+.popup__error_visible {
+  display: flex;
+}
+
+.input-name-error {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  max-width: 358px;
+  text-align: left;
+}
+.input-about-error {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  max-width: 358px;
+  text-align: left;
+}
+
+.input-avatar-error {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  max-width: 358px;
+  text-align: left;
+}
+
+@media screen and (max-width: 320px) {
+  .popup__form {
+    width: 282px;
+    height: 400px;
+  }
+
+  .popup__close-button {
+    position: absolute;
+    top: -60px;
+    right: 0;
+  }
+
+  .popup__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 50px;
+  }
+
+  .popup__input-about {
+    width: 238px;
+    height: 26px;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  .popup__input-name {
+    width: 238px;
+    height: 26px;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .popup__button {
+    width: 238px;
+    height: 46px;
+    margin: 20px auto;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 46px;
+    margin-bottom: 25px;
+  }
+
+  .input-name-error {
+    max-width: 238px;
+  }
+  .input-about-error {
+    max-width: 238px;
+  }
+}

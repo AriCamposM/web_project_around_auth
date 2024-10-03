@@ -1,0 +1,91 @@
+.element {
+  max-width: 282px;
+  position: relative;
+}
+
+.element__trash {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  display: none;
+}
+
+.element__trash-visible {
+  display: flex;
+}
+
+.element__trash-hidden {
+  display: none;
+}
+
+.element__trash:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.element__image-container {
+  max-width: 282px;
+  max-height: 282px;
+}
+
+.element__image {
+  width: 282px;
+  height: 282px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.element__footer {
+  max-width: 282px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.element__text {
+  color: #000;
+  margin: 0;
+  margin-left: 21px;
+  margin-top: 25px;
+  margin-bottom: 31px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.element__button {
+  margin-right: 18px;
+  margin-top: 25px;
+  margin-bottom: 31px;
+
+  max-width: 24px;
+  max-height: 21px;
+  padding: 0px;
+  border: none;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.element__button:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.element__button.active {
+  background-image: url(../images/heart__black.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.element__heart {
+}
